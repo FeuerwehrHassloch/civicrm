@@ -1,0 +1,13 @@
+version: "3.8"
+services: 
+  civicrm:
+    container_name: civicrm
+    build: .
+    restart: always #change if you don't want your container restarting
+    ports:
+      - 9523:80
+    networks:
+      - civicrm
+networks:
+  civicrm:
+    name: civicrm
