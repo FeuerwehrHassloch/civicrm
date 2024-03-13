@@ -26,6 +26,3 @@ RUN composer install
 
 # Share volume so civicrm can be configured/modified and web files can be added
 volume /var/www
-
-# Restart apache2 when we start up to make sure the latest changes are showing (maybe not needed)
-ENTRYPOINT ["apache2ctl restart"]
